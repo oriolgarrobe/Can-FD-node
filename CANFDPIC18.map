@@ -1,0 +1,822 @@
+MPLINK 4.37, Linker
+Linker Map File - Created Tue Jun 18 22:37:20 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+                   .cinit    romdata   0x000006    program   0x00001a
+ .code_drv_canfdspi_api.o       code   0x000020    program   0x0052ee
+             .code_main.o       code   0x00530e    program   0x0004ae
+.romdata_drv_canfdspi_api.o    romdata   0x0057bc    program   0x000300
+          .code_drv_spi.o       code   0x005abc    program   0x0001a0
+               _cinit_scn       code   0x005c5c    program   0x00009e
+         .code_spi_open.o       code   0x005cfa    program   0x000068
+         .code_fxd3232u.o       code   0x005d62    program   0x000048
+         .code_spi_writ.o       code   0x005daa    program   0x00003c
+         .code_spi_read.o       code   0x005de6    program   0x00002e
+                    .code       code   0x005e14    program   0x000020
+             _startup_scn       code   0x005e34    program   0x00001c
+           .code___init.o       code   0x005e50    program   0x000002
+       .romdata_drv_spi.o    romdata   0x005e52    program   0x000000
+         .romdata_c018i.o    romdata   0x005e52    program   0x000000
+        .romdata___init.o    romdata   0x005e52    program   0x000000
+      .romdata_spi_writ.o    romdata   0x005e52    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x005e52    program   0x000000
+      .idata_spi_open.o_i    romdata   0x005e52    program   0x000000
+      .romdata_spi_open.o    romdata   0x005e52    program   0x000000
+          .romdata_main.o    romdata   0x005e52    program   0x000000
+      .idata_spi_read.o_i    romdata   0x005e52    program   0x000000
+      .romdata_spi_read.o    romdata   0x005e52    program   0x000000
+          .idata_main.o_i    romdata   0x005e52    program   0x0000bf
+      .idata_spi_writ.o_i    romdata   0x005e52    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x005f11    program   0x000000
+.idata_drv_canfdspi_api.o_i    romdata   0x005f11    program   0x00007e
+       .idata_drv_spi.o_i    romdata   0x005f11    program   0x000000
+        .idata___init.o_i    romdata   0x005f8f    program   0x000000
+         .idata_c018i.o_i    romdata   0x005f8f    program   0x000000
+            .code_c018i.o       code   0x005f90    program   0x000000
+                MATH_DATA      udata   0x000000       data   0x000010
+                 .tmpdata      udata   0x000010       data   0x000009
+.idata_drv_canfdspi_api.o      idata   0x000080       data   0x00007e
+          .idata___init.o      idata   0x0000fe       data   0x000000
+          .udata___init.o      udata   0x0000fe       data   0x000000
+        .idata_spi_writ.o      idata   0x0000fe       data   0x000000
+        .udata_spi_writ.o      udata   0x0000fe       data   0x000000
+        .idata_spi_read.o      idata   0x0000fe       data   0x000000
+        .udata_spi_read.o      udata   0x0000fe       data   0x000000
+        .idata_spi_open.o      idata   0x0000fe       data   0x000000
+        .udata_spi_open.o      udata   0x0000fe       data   0x000000
+        .idata_fxd3232u.o      idata   0x0000fe       data   0x000000
+        .udata_fxd3232u.o      udata   0x0000fe       data   0x000000
+         .idata_drv_spi.o      idata   0x0000fe       data   0x000000
+         .udata_drv_spi.o      udata   0x0000fe       data   0x000000
+           .idata_c018i.o      idata   0x0000fe       data   0x000000
+            .udata_main.o      udata   0x000100       data   0x000100
+            .idata_main.o      idata   0x000200       data   0x0000bf
+                   .stack      udata   0x000400       data   0x000100
+.udata_drv_canfdspi_api.o      udata   0x000500       data   0x0000c1
+           .udata_c018i.o      udata   0x0005c1       data   0x00000a
+            SFR_UNBANKED0      udata   0x000f80       data   0x000080
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x005f8e      
+            24463 out of 33048 program addresses used, program memory utilization is 74%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+       BitReverseTable256   0x0057bc    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigure   0x002c38    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureData10MHz   0x0033fa    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureData20MHz   0x0038d6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureData40MHz   0x003f0a    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureNominal10MHz   0x00374a    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureNominal20MHz   0x003d7e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureNominal40MHz   0x00453e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_Configure   0x000ab6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ConfigureObjectReset   0x000dac    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_DataBytesToDlc   0x0047e8    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_DlcToDataBytes   0x0046c6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_EccEnable   0x003256    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_FilterDisable   0x004ef0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_FilterMaskConfigure   0x004b9e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_FilterObjectConfigure   0x00487e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_FilterToFifoLink   0x004e60    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_GpioModeConfigure   0x001280    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventClear   0x001434    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventDisable   0x001370    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventEnable   0x001116    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventFilterHitGet   0x00160e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventIcodeGet   0x001686    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventRxCodeGet   0x0014ca    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventTxCodeGet   0x00156c    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_OperationModeSelect   0x00107c    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+     DRV_CANFDSPI_RamInit   0x0032e0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+    DRV_CANFDSPI_ReadByte   0x000070    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReadByteArray   0x0005b2    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReadHalfWord   0x0003a8    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+    DRV_CANFDSPI_ReadWord   0x00018c    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReadWordArray   0x0007a6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelConfigure   0x002df2    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelConfigureObjectReset   0x002d1e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelEventDisable   0x0026cc    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelEventEnable   0x0025f0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelEventGet   0x0024ba    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelEventOverflowClear   0x0027aa    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelUpdate   0x002428    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveEventGet   0x002570    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveEventOverflowGet   0x0025b0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveMessageGet   0x002872    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+       DRV_CANFDSPI_Reset   0x000020    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefConfigure   0x004f96    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefEventDisable   0x002210    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefEventEnable   0x00215e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+ DRV_CANFDSPI_TefEventGet   0x0020d2    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefEventOverflowClear   0x0022c4    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefMessageGet   0x001e12    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_TefUpdate   0x001dac    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelConfigure   0x002f42    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelConfigureObjectReset   0x003108    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelEventAttemptClear   0x002362    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelEventEnable   0x0011d6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelEventGet   0x001d00    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelLoad   0x001740    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelUpdate   0x001c58    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitQueueConfigure   0x005072    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitQueueConfigureObjectReset   0x0051f0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_WriteByte   0x0000f6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_WriteByteArray   0x0006a8    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_WriteHalfWord   0x0004c0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_WriteWord   0x0002a4    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_WriteWordArray   0x000908    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+ DRV_SPI_ChipSelectAssert   0x005abc    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_spi.c
+       DRV_SPI_Initialize   0x005ae4    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_spi.c
+     DRV_SPI_TransferData   0x005af8    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_spi.c
+                 FXD3232U   0x005d62    program     extern C:\MCC18\src\traditional\math\fxd3232u.c
+                  OpenSPI   0x005cfa    program     extern C:\MCC18\src\pmc_common\SPI\spi_open.c
+                  ReadSPI   0x005de6    program     extern C:\MCC18\src\pmc_common\SPI\spi_read.c
+                 WriteSPI   0x005daa    program     extern C:\MCC18\src\pmc_common\SPI\spi_writ.c
+      ___case_10_lbl00312   0x00475c    program     static                          
+      ___case_11_lbl00313   0x00476c    program     static                          
+      ___case_12_lbl00314   0x00477c    program     static                          
+      ___case_13_lbl00315   0x00478c    program     static                          
+      ___case_14_lbl00316   0x00479c    program     static                          
+      ___case_15_lbl00317   0x0047ac    program     static                          
+       ___case_9_lbl00311   0x00474c    program     static                          
+      ___default_lbl00318   0x0047bc    program     static                          
+         ___else_lbl00320   0x00472a    program     static                          
+          ___for_lbl00004   0x0056d4    program     static                          
+          ___for_lbl00005   0x0056e0    program     static                          
+          ___for_lbl00006   0x005674    program     static                          
+           ___if_lbl00001   0x0053f2    program     static                          
+           ___if_lbl00009   0x0057a6    program     static                          
+           ___if_lbl00319   0x0047be    program     static                          
+       ___return_lbl00000   0x0057a8    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x005da8    program     static                          
+       ___return_lbl00001   0x005e4e    program     static                          
+       ___return_lbl00002   0x005cf8    program     static                          
+       ___return_lbl00309   0x0047d4    program     static                          
+       ___return_lbl00340   0x004e48    program     static                          
+   ___switchexit_lbl00310   0x0047be    program     static                          
+        ___while_lbl00002   0x0055ac    program     static                          
+        ___while_lbl00003   0x0057a8    program     static                          
+        ___while_lbl00007   0x0056fa    program     static                          
+        ___while_lbl00008   0x005700    program     static                          
+                   __init   0x005e50    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+              __tmplbl_45   0x0046f6    program     static                          
+              __tmplbl_46   0x004712    program     static                          
+            __zero_memory   0x005e14    program     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                _do_cinit   0x005c5c    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                   _false   0x005da4    program     static                          
+                 _startup   0x005e34    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                compare_l   0x005e2a    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                copy_loop   0x005cce    program     static                          
+            copy_one_byte   0x005cd4    program     static                          
+              crc16_table   0x0058bc    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+                     done   0x005cf8    program     static                          
+             done_copying   0x005ce2    program     static                          
+                     loop   0x005d70    program     static                          
+                     loop   0x005e44    program     static                          
+                   loop_h   0x005e22    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                   loop_l   0x005e2c    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                     main   0x00530e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                     test   0x005c76    program     static                          
+               zero_block   0x005e22    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PWM1CON   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              PWM1CONbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     SIGN   0x00000e       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                        W   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB7   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __BARGB0   0x00000c       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB1   0x00000b       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB2   0x00000a       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB3   0x000009       data     extern C:\MCC18\src\traditional\math\barg.asm
+                   __BEXP   0x00000d       data     extern C:\MCC18\src\traditional\math\barg.asm
+                __FPFLAGS   0x00000f       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000f       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB3   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __tmp_0   0x000010       data     static C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                  __tmp_0   0x000010       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_spi.c
+                  __tmp_0   0x000010       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+                        a   0x0000fc       data     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+                      acc   0x000500       data     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+                  address   0x000101       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+    canControlResetValues   0x000080       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+    canControlResetValues   0x000200       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+       canFifoResetValues   0x000250       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+       canFifoResetValues   0x0000d0       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+canFilterControlResetValue   0x0000dc       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+canFilterControlResetValue   0x00025c       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+canFilterObjectResetValues   0x0000e0       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+canFilterObjectResetValues   0x000260       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+                   config   0x0001bc       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                curr_byte   0x0005c4       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x0005c6       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 data_ptr   0x0005c8       data     static C:\MCC18\src\traditional\startup\c018i.c
+                     fObj   0x00015a       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                     good   0x00027c       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                        i   0x000100       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                       ip   0x00027f       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                     iprx   0x0001c0       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                   length   0x000107       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                     mObj   0x00015e       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+mcp2517ControlResetValues   0x000268       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+mcp2517ControlResetValues   0x0000e8       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+                   opMode   0x0001bf       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                     prom   0x0005c1       data     static C:\MCC18\src\traditional\startup\c018i.c
+           ramInitialized   0x00027d       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                 rxConfig   0x000158       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                  rxFlags   0x000162       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                    rxObj   0x000163       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                      rxd   0x00016f       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+          selectedBitTime   0x00027e       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+         spiReceiveBuffer   0x000561       data     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+        spiTransmitBuffer   0x000501       data     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+                tefConfig   0x0001bb       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                 tefFlags   0x00010b       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                   tefObj   0x0001af       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                 txConfig   0x000108       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                  txFlags   0x00010a       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                    txObj   0x00010c       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                      txd   0x000118       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                   v_data   0x000103       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+       DRV_CANFDSPI_Reset   0x000020    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+    DRV_CANFDSPI_ReadByte   0x000070    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_WriteByte   0x0000f6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+    DRV_CANFDSPI_ReadWord   0x00018c    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_WriteWord   0x0002a4    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReadHalfWord   0x0003a8    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_WriteHalfWord   0x0004c0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReadByteArray   0x0005b2    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_WriteByteArray   0x0006a8    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReadWordArray   0x0007a6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_WriteWordArray   0x000908    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_Configure   0x000ab6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ConfigureObjectReset   0x000dac    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_OperationModeSelect   0x00107c    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventEnable   0x001116    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelEventEnable   0x0011d6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_GpioModeConfigure   0x001280    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventDisable   0x001370    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventClear   0x001434    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventRxCodeGet   0x0014ca    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventTxCodeGet   0x00156c    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventFilterHitGet   0x00160e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ModuleEventIcodeGet   0x001686    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelLoad   0x001740    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelUpdate   0x001c58    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelEventGet   0x001d00    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_TefUpdate   0x001dac    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefMessageGet   0x001e12    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+ DRV_CANFDSPI_TefEventGet   0x0020d2    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefEventEnable   0x00215e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefEventDisable   0x002210    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefEventOverflowClear   0x0022c4    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelEventAttemptClear   0x002362    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelUpdate   0x002428    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelEventGet   0x0024ba    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveEventGet   0x002570    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveEventOverflowGet   0x0025b0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelEventEnable   0x0025f0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelEventDisable   0x0026cc    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelEventOverflowClear   0x0027aa    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveMessageGet   0x002872    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigure   0x002c38    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelConfigureObjectReset   0x002d1e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_ReceiveChannelConfigure   0x002df2    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelConfigure   0x002f42    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitChannelConfigureObjectReset   0x003108    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+   DRV_CANFDSPI_EccEnable   0x003256    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+     DRV_CANFDSPI_RamInit   0x0032e0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureData10MHz   0x0033fa    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureNominal10MHz   0x00374a    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureData20MHz   0x0038d6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureNominal20MHz   0x003d7e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureData40MHz   0x003f0a    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_BitTimeConfigureNominal40MHz   0x00453e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_DlcToDataBytes   0x0046c6    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+              __tmplbl_45   0x0046f6    program     static                          
+              __tmplbl_46   0x004712    program     static                          
+         ___else_lbl00320   0x00472a    program     static                          
+       ___case_9_lbl00311   0x00474c    program     static                          
+      ___case_10_lbl00312   0x00475c    program     static                          
+      ___case_11_lbl00313   0x00476c    program     static                          
+      ___case_12_lbl00314   0x00477c    program     static                          
+      ___case_13_lbl00315   0x00478c    program     static                          
+      ___case_14_lbl00316   0x00479c    program     static                          
+      ___case_15_lbl00317   0x0047ac    program     static                          
+      ___default_lbl00318   0x0047bc    program     static                          
+           ___if_lbl00319   0x0047be    program     static                          
+   ___switchexit_lbl00310   0x0047be    program     static                          
+       ___return_lbl00309   0x0047d4    program     static                          
+DRV_CANFDSPI_DataBytesToDlc   0x0047e8    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_FilterObjectConfigure   0x00487e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_FilterMaskConfigure   0x004b9e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+       ___return_lbl00340   0x004e48    program     static                          
+DRV_CANFDSPI_FilterToFifoLink   0x004e60    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_FilterDisable   0x004ef0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TefConfigure   0x004f96    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitQueueConfigure   0x005072    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+DRV_CANFDSPI_TransmitQueueConfigureObjectReset   0x0051f0    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+                     main   0x00530e    program     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+           ___if_lbl00001   0x0053f2    program     static                          
+        ___while_lbl00002   0x0055ac    program     static                          
+          ___for_lbl00006   0x005674    program     static                          
+          ___for_lbl00004   0x0056d4    program     static                          
+          ___for_lbl00005   0x0056e0    program     static                          
+        ___while_lbl00007   0x0056fa    program     static                          
+        ___while_lbl00008   0x005700    program     static                          
+           ___if_lbl00009   0x0057a6    program     static                          
+       ___return_lbl00000   0x0057a8    program     static                          
+        ___while_lbl00003   0x0057a8    program     static                          
+       BitReverseTable256   0x0057bc    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+              crc16_table   0x0058bc    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+ DRV_SPI_ChipSelectAssert   0x005abc    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_spi.c
+       DRV_SPI_Initialize   0x005ae4    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_spi.c
+     DRV_SPI_TransferData   0x005af8    program     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_spi.c
+                _do_cinit   0x005c5c    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     test   0x005c76    program     static                          
+                copy_loop   0x005cce    program     static                          
+            copy_one_byte   0x005cd4    program     static                          
+             done_copying   0x005ce2    program     static                          
+                     done   0x005cf8    program     static                          
+       ___return_lbl00002   0x005cf8    program     static                          
+                  OpenSPI   0x005cfa    program     extern C:\MCC18\src\pmc_common\SPI\spi_open.c
+                 FXD3232U   0x005d62    program     extern C:\MCC18\src\traditional\math\fxd3232u.c
+                     loop   0x005d70    program     static                          
+                   _false   0x005da4    program     static                          
+       ___return_lbl00000   0x005da8    program     static                          
+                 WriteSPI   0x005daa    program     extern C:\MCC18\src\pmc_common\SPI\spi_writ.c
+                  ReadSPI   0x005de6    program     extern C:\MCC18\src\pmc_common\SPI\spi_read.c
+            __zero_memory   0x005e14    program     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   loop_h   0x005e22    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+               zero_block   0x005e22    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                compare_l   0x005e2a    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                   loop_l   0x005e2c    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                 _startup   0x005e34    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     loop   0x005e44    program     static                          
+       ___return_lbl00001   0x005e4e    program     static                          
+                   __init   0x005e50    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+                 __AARGB7   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB3   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __BARGB3   0x000009       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB2   0x00000a       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB1   0x00000b       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB0   0x00000c       data     extern C:\MCC18\src\traditional\math\barg.asm
+                   __BEXP   0x00000d       data     extern C:\MCC18\src\traditional\math\barg.asm
+                     SIGN   0x00000e       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x00000f       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000f       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                  __tmp_0   0x000010       data     static C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                  __tmp_0   0x000010       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_spi.c
+                  __tmp_0   0x000010       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+    canControlResetValues   0x000080       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+       canFifoResetValues   0x0000d0       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+canFilterControlResetValue   0x0000dc       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+canFilterObjectResetValues   0x0000e0       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+mcp2517ControlResetValues   0x0000e8       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+                        a   0x0000fc       data     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+                        i   0x000100       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                  address   0x000101       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                   v_data   0x000103       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                   length   0x000107       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                 txConfig   0x000108       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                  txFlags   0x00010a       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                 tefFlags   0x00010b       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                    txObj   0x00010c       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                      txd   0x000118       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                 rxConfig   0x000158       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                     fObj   0x00015a       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                     mObj   0x00015e       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                  rxFlags   0x000162       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                    rxObj   0x000163       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                      rxd   0x00016f       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                   tefObj   0x0001af       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                tefConfig   0x0001bb       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                   config   0x0001bc       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                   opMode   0x0001bf       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                     iprx   0x0001c0       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+    canControlResetValues   0x000200       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+       canFifoResetValues   0x000250       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+canFilterControlResetValue   0x00025c       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+canFilterObjectResetValues   0x000260       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+mcp2517ControlResetValues   0x000268       data     static C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_register.h
+                     good   0x00027c       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+           ramInitialized   0x00027d       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+          selectedBitTime   0x00027e       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                       ip   0x00027f       data     extern C:\Users\Oriol\Desktop\CAN 2.0\main.c
+                      acc   0x000500       data     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+        spiTransmitBuffer   0x000501       data     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+         spiReceiveBuffer   0x000561       data     extern C:\Users\Oriol\Desktop\CAN 2.0\drv_canfdspi_api.c
+                     prom   0x0005c1       data     static C:\MCC18\src\traditional\startup\c018i.c
+                curr_byte   0x0005c4       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x0005c6       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 data_ptr   0x0005c8       data     static C:\MCC18\src\traditional\startup\c018i.c
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PWM1CON   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              PWM1CONbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                        W   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+
+
