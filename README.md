@@ -2,6 +2,7 @@
 
 
 Paper of the project can be found in the UPC database:
+
 https://upcommons.upc.edu/handle/2117/177408?locale-attribute=en
 
 As part of a Bachelor thesis, in this repo there is the developement of a CAN node based on a PIC18 microcontroller and an MCP2517FD click. The system has been programmed using C language. 
